@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+        <link rel="icon" href="./imagenes/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <a href="index.html">LOGO</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="cabanas.html">Cabanas</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="bloqueContacto">
+            <div>
+                <form id="formularioContacto" action="#" method="post">
+                    <fieldset>
+                        <legend>Información de contacto</legend>
+                        
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="mail">Mail</label>
+                            <input type="text" name="mail">
+                        </div>
+                        
+                        <div id="fecha">
+                            <p>
+                            <label for="fecha">Fecha</label>
+                            <input type="date" name="fecha">
+                            -                        
+                            <input type="date" name="fecha">
+                            <br>
+                            <label for="sin-fecha">No tengo fecha</label>
+                            <input type="checkbox" name="sin-fecha">
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <label for="personas">Personas:</label>
+                            <select id="cant-personas" name="personas">
+                                <option value="" hidden>Selecciona una opción</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="asunto">Asunto</label>
+                            <input type="text" name="asunto">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" cols="30" rows="10"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <input id="boton-enviar" type="button" name="enviar" value="Enviar">
+                        </div>                   
+                    </fieldset>
+                </form>            
+            </div>
+
+            <div id="infoContacto">
+                <div class="infoContacto__bloque">
+                <img id="foto-telefono" src="https://png.pngtree.com/png-vector/20191027/ourlarge/pngtree-calling-telephone-glyph-icon-vector-png-image_1885956.jpg" alt="telefono">
+                +54 11 12345678
+                </div>
+                <div class="infoContacto__bloque">
+                <img id="foto-email" src="https://e7.pngegg.com/pngimages/655/909/png-clipart-email-computer-icons-folders-miscellaneous-angle.png" alt="email">
+                complejogemini@coderhouse.com                
+                </div>
+                <div class="infoContacto__bloque">
+                <img id="foto-ubicacion" src="https://w7.pngwing.com/pngs/348/786/png-transparent-location-computer-icons-space-location-photography-black-shape-thumbnail.png" alt="ubicacion">
+                Centinela del Mar, Prov. de Buenos Aires
+                </div>
+            </div>
+        </section>
+
+        <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12501.213496927869!2d-58.22832317013764!3d-38.43446101601872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95857ac668d73c69%3A0x3494506fd3143190!2sCentinela%20del%20Mar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1647791612885!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <br>
+
+        <footer>
+
+            <div id="copyright">
+                <p>Copyright © Todos los derechos reservados</p>
+            </div>
+
+            <div id="redes-sociales">                
+                <h5>REDES SOCIALES</h5>                
+                <p>
+                    Seguinos en
+                    <a href="https://www.facebook.com" target="_blank"><img id="foto-facebook" src="./imagenes/facebook.jpg" alt="facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img id="foto-instagram" src="./imagenes/instagram.png" alt="instagram"></a>                                            
+                </p>
+            </div>
+    
+        </footer>
+        
+    </body>
+
+</html>
