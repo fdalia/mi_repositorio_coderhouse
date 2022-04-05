@@ -1,5 +1,6 @@
 body {
-    background-image: url(https://thumbs.dreamstime.com/b/textura-de-la-arena-fondo-del-desierto-131586109.jpg);
+    /* background-image: url(https://thumbs.dreamstime.com/b/textura-de-la-arena-fondo-del-desierto-131586109.jpg); */
+    background-color: #c7b96d;
     background-size: cover;
     /* background-repeat: no-repeat; */
 }
@@ -53,8 +54,9 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #B89D48;
+    background-color: #B89D48;    
 }
+
 
                                                 /* INDEX */
 
@@ -233,8 +235,8 @@ footer {
     font-size: 30px;
     font-style: italic;    
     margin: 20px 0px;
-    text-align: center;
-}                                            
+    text-align: center;    
+}
 
 #parallaxSurf {
     height: 500px;
@@ -480,6 +482,14 @@ header nav ul li a {
 header div a {
     margin-left: 20px;
     margin-top: 10px;
+}
+
+header nav ul li a {
+    transition: 1s;
+}
+
+header nav ul li a:hover {
+    font-size: 20px;
 }
 
 
