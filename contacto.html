@@ -35,31 +35,34 @@
                     <fieldset>
                         <legend>Información de contacto</legend>
                         
-                        <div>
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" required>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="mail">Mail</label>
-                            <input type="text" name="mail">
+                        <div class="mb-3 mt-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" name="nombre" class="form-control" required>
                         </div>
                         
-                        <div id="fecha">
-                            <p>
+                        <div class="mb-3 mt-3">
+                            <label for="mail" class="form-label">Mail</label>
+                            <input type="text" name="mail" class="form-control">
+                        </div>
+                        
+                        <div id="fecha" class="mb-3 mt-3">                            
                             <label for="fecha">Fecha</label>
-                            <input type="date" name="fecha">
-                            -                        
-                            <input type="date" name="fecha">
-                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="date" name="fecha" class="form-control">
+                                </div>
+                                -
+                                <div class="col">
+                                    <input type="date" name="fecha" class="form-control">
+                                </div>                                                                                                
+                            </div>
+                            <input type="checkbox" name="sin-fecha" class="form-check-input">
                             <label for="sin-fecha">No tengo fecha</label>
-                            <input type="checkbox" name="sin-fecha">
-                            </p>
                         </div>
                         
-                        <div>
+                        <div class="mb-3 mt-3">
                             <label for="personas">Personas:</label>
-                            <select id="cant-personas" name="personas">
+                            <select id="cant-personas" name="personas" class="form-select-sm">
                                 <option value="" hidden>Selecciona una opción</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -68,19 +71,20 @@
                                 <option value="5">5</option>
                             </select>
                         </div>
-                        <br>
-                        <div>
-                            <label for="asunto">Asunto</label>
-                            <input type="text" name="asunto">
+                        
+                        <div class="mb-3 mt-3">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <input type="text" name="asunto" class="form-control">
+                        </div>
+                        
+                        <div class="mb-3 mt-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <br>
+                            <textarea name="mensaje" cols="30" rows="10" class="form-control"></textarea>
                         </div>
                         <br>
                         <div>
-                            <label for="mensaje">Mensaje</label>
-                            <textarea name="mensaje" cols="30" rows="10"></textarea>
-                        </div>
-                        <br>
-                        <div>
-                            <input id="boton-enviar" type="button" name="enviar" value="Enviar">
+                            <input type="submit" name="enviar" value="Enviar" id="boton-enviar" class="btn btn-primary">
                         </div>                   
                     </fieldset>
                 </form>            

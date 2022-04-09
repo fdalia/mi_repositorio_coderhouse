@@ -184,6 +184,7 @@ footer {
     background-color: rgb(237, 211, 142, 0.8);
     margin: 10px 0px;    
     font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 5px;
 }
 
 #boton-enviar {    
@@ -200,13 +201,12 @@ footer {
     font-weight: bold;
     background-color: rgb(230, 230, 230, 0.8);
     padding: 10px;
-    height: 125px;
     border-radius: 30px;
-    justify-self: start;
+    justify-self: stretch;
 }
 
 #foto-telefono, #foto-email, #foto-ubicacion {    
-    opacity: 0.6;
+    opacity: 0.5;
     margin-right: 15px;    
 }
 
@@ -450,7 +450,8 @@ header nav ul li a {
 }
 
 #infoContacto {
-    grid-area: info;    
+    grid-area: info;
+    align-self: start;    
 }
 
                                             /* CABAÑAS */
@@ -579,7 +580,8 @@ header nav ul li a:hover {
 #infoContacto {
     margin-top: 60px;
     margin-left: 30px;
-    width: 50%;
+    width: 50%;    
+    align-self: start;
 }
 
 #mapa {
