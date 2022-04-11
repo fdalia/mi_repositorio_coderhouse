@@ -2,7 +2,7 @@ body {
     /* background-image: url(https://thumbs.dreamstime.com/b/textura-de-la-arena-fondo-del-desierto-131586109.jpg); */
     background-color: #c7b96d;
     background-size: cover;
-    /* background-repeat: no-repeat; */
+    /* background-repeat: no-repeat; */    
 }
 
 /* ------------------------------------------- PANTALLA MOBILE -------------------------------------------- */
@@ -112,7 +112,7 @@ header nav ul li a:hover {
 }
 
 #bloque__1--imagen img {    
-    width: 100%;
+    /* width: 100%; */ 
     border-radius: 20px;
     box-shadow: 10px 10px 20px rgb(148, 140, 89);
 }
@@ -544,7 +544,7 @@ header nav ul li a:hover {
     padding: 10px;
     border-radius: 10px;
     background-color: #0b55a3;
-}
+} 
 
 #bloque__1--conocenos a:hover {
     background-color: #1788ff;
@@ -555,11 +555,11 @@ header nav ul li a:hover {
     grid-area: imagen;            
 }
 
-#bloque__1--imagen img {
+/* #bloque__1--imagen img {
     height: 400px;
     width: 600px;    
     margin: 0px;    
-}                                                
+}                                                 */
                                             /* CONTACTO */
 #bloqueContacto {
     display: flex;
