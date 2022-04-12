@@ -396,7 +396,8 @@ footer {
 }
 
 #bloqueSobreNosotros__1 {
-    grid-area: bloque1;    
+    grid-area: bloque1;
+    text-align: right;    
 }
 
 #bloqueSobreNosotros__2 {
@@ -404,7 +405,8 @@ footer {
 }
 
 #bloqueSobreNosotros__3 {
-    grid-area: bloque3;    
+    grid-area: bloque3;
+    text-align: right;    
 }
 
 #bloqueSobreNosotros__4 {
@@ -416,6 +418,7 @@ footer {
     border-radius: 20px;
     padding: 10px;
     margin: 10px 0px;
+    background-image: radial-gradient(#f2db72 5%, #c7b96d);
 }
 
 #bloqueSobreNosotros div h3 {
@@ -492,8 +495,7 @@ header nav ul li a:hover {
 
                                                 /* INDEX */
 .titular {                                                
-    width: 100%;
-    margin: 10px 10px 0px 10px;
+    width: 100%;    
 }
 
 #titular__titulo {
