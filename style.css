@@ -18,11 +18,7 @@ header {
 header div a {
     float: left;
     margin-left: 5px;
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
+    margin-top: 10px;            
 }
 
 header nav ul {
@@ -269,7 +265,7 @@ footer {
     height: 150px;
     width: 300px;
     border-radius: 25px;
-    /* text-align: center; */
+    text-align: center;
     padding: 0px;        
 }
 
@@ -285,6 +281,10 @@ footer {
 .parallaxSurf__bloque h3, .parallaxSandboard__bloque h3 {
     font-size: 14px;
     margin-top: 0px;        
+}
+
+.parallaxSurf__bloque p, .parallaxSandboard__bloque p {
+    font-size: 14px;
 }
 
 .parallaxSandboard__bloque {
@@ -320,10 +320,22 @@ footer {
 }
 
 #petFriendly {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color: black;
     border-radius: 15px;
     border: 1px solid #fcd89a;
     padding-top: 10px;
     background-color: #d1a456;
+    animation-name: titilaRojo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+@keyframes titilaRojo {
+    50% {color: red;}    
+    50% {border-color: red;}
 }
 
 .titularBungalow {
@@ -631,6 +643,11 @@ header nav ul li a:hover {
 
 .parallaxSurf__bloque h3, .parallaxSandboard__bloque h3 {
     font-size: 19px;
+}
+
+.parallaxSurf__bloque p, .parallaxSandboard__bloque p {
+    font-size: 16px;
+    margin-top: 25px;
 }
 
                                             /* FOOTER */
