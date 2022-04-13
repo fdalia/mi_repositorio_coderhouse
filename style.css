@@ -15,7 +15,7 @@ header {
                                 al medio */    
 }
 
-div a {
+header div a {
     float: left;
     margin-left: 5px;
     margin-top: 10px;
@@ -25,11 +25,8 @@ div a {
     color: black;
 }
 
-header nav {        
-    font-family: 'Source Sans Pro', sans-serif;                
-}
-
 header nav ul {
+    font-family: 'Source Sans Pro', sans-serif;                
     list-style: none;
     font-size: 0;            
     padding: 0;
@@ -144,26 +141,25 @@ footer {
     border: 1px solid black;            
 }
 
-#redes-sociales {
+#redesSociales {
     justify-self: right;
     grid-area: redesSociales;
-    margin-right: 5px;            
+    margin-right: 5px;                
 }
 
-#redes-sociales h5 {    
+#redesSociales h5 {    
     font-size: 20px;
     margin: 0px;
     text-align: right;
 }
 
-#redes-sociales p {
-    font-size: 16px;
-    margin: 0px;
+#redesSociales p {
+    margin-bottom: 0px;        
 }
 
 #foto-facebook, #foto-instagram {
     width: 30px;
-    height: 30px;    
+    height: 30px;            
 }
 
 #copyright {    
@@ -189,6 +185,7 @@ footer {
 
 #boton-enviar {    
     width: 100px;
+    float: right;    
 }
 
 #mapa {
@@ -202,6 +199,7 @@ footer {
     background-color: rgb(230, 230, 230, 0.8);
     padding: 10px;
     border-radius: 30px;
+    border: 1px solid white;
     justify-self: stretch;
 }
 
@@ -229,8 +227,7 @@ footer {
 
                                                 /* ACTIVIDADES */
 
-#actividades__titular {    
-    font-family: 'Source Sans Pro', sans-serif;    
+#actividades__titular {        
     font-size: 30px;
     font-style: italic;    
     margin: 20px 0px;
@@ -265,6 +262,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: black;
 }
 
 .parallaxSurf__bloque, .parallaxSandboard__bloque {    
@@ -277,18 +275,26 @@ footer {
 
 .parallaxSurf__bloque {
     background-color: rgb(255, 255, 255, 0.3);
+    transition: 2s;
+}
+
+.parallaxSurf__bloque:hover {
+    background-color: rgba(255, 255, 255, 0.815);
 }
 
 .parallaxSurf__bloque h3, .parallaxSandboard__bloque h3 {
     font-size: 14px;
-    margin-top: 0px;    
-    font-family: 'Source Sans Pro', sans-serif;    
+    margin-top: 0px;        
 }
 
 .parallaxSandboard__bloque {
-    background-color: rgb(74, 74, 74, 0.3)
+    background-color: rgb(74, 74, 74, 0.3);
+    transition: 2s;
 }
 
+.parallaxSandboard__bloque:hover {
+    background-color: rgba(26, 26, 26, 0.5)
+}
 .palabraParallax {
     margin-top: 130px;
     font-family: 'Source Sans Pro', sans-serif;    
@@ -296,13 +302,12 @@ footer {
     font-style: italic;
     font-weight: bold;    
     text-align: center;
-    color: #786b48;    
+    color: white;    
 }
 
                                                 /* CABAÑAS */
 
-#cabanas__titular {
-    font-family: 'Source Sans Pro', sans-serif;    
+#cabanas__titular {    
     font-size: 30px;
     font-style: italic;    
     margin: 20px 0px;
@@ -310,7 +315,15 @@ footer {
 }
 
 #nuestrosBungalows {
-    font-family: 'Source Sans Pro', sans-serif;    
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;    
+}
+
+#petFriendly {
+    border-radius: 15px;
+    border: 1px solid #fcd89a;
+    padding-top: 10px;
+    background-color: #d1a456;
 }
 
 .titularBungalow {
@@ -351,14 +364,12 @@ footer {
     width: 250px;    
 }
 
-#quieroReservar {
-    display: inline-block;                
+#quieroReservar {        
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-family: 'Inter', sans-serif;
-    font-size: 30px;        
-    margin-left: auto; /* no sé cómo centrar este botón */
-    margin-right: auto; /* no sé cómo centrar este botón */
-    margin-bottom: 10px;
-    margin-top: 40px;    
+    font-size: 25px;                
 }
 
 #quieroReservar a {                    
@@ -366,7 +377,7 @@ footer {
     text-decoration: none;
     padding: 15px;    
     border-radius: 10px;
-    background-color: #0b55a3;
+    background-color: #0b55a3;    
 }
 
 #quieroReservar a:hover {
@@ -375,8 +386,7 @@ footer {
 
                                                 /* SOBRE NOSOTROS */
 
-#sobreNosotrosTitulo {
-    font-family: 'Source Sans Pro', sans-serif;    
+#sobreNosotrosTitulo {    
     font-size: 30px;
     font-style: italic;    
     margin: 20px 0px;
@@ -574,10 +584,6 @@ header nav ul li a:hover {
     width: 900px;
 }
 
-#boton-enviar {
-    float: right;
-}
-
 #infoContacto {
     margin-top: 60px;
     margin-left: 30px;
@@ -593,6 +599,12 @@ header nav ul li a:hover {
                                             /* CABAÑAS */
 .titularBungalow {
     text-align: left;
+}
+
+#cabanas__encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .bloqueBungalow {
@@ -623,7 +635,7 @@ header nav ul li a:hover {
 
                                             /* FOOTER */
 
-#redes-sociales p a {
+#redesSociales p a {
     margin-left: 5px;    
 }
 
