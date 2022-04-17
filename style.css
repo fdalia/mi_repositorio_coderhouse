@@ -1,8 +1,5 @@
-body {
-    /* background-image: url(https://thumbs.dreamstime.com/b/textura-de-la-arena-fondo-del-desierto-131586109.jpg); */
-    background-color: #c7b96d;
-    background-size: cover;
-    /* background-repeat: no-repeat; */    
+body {    
+    background-color: #c7b96d;        
 }
 
 /* ------------------------------------------- PANTALLA MOBILE -------------------------------------------- */
@@ -307,9 +304,7 @@ footer {
 }
 
 .titularBungalow {
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;        
     text-align: center;    
 }
 
@@ -366,12 +361,12 @@ footer {
 
                                                 /* SOBRE NOSOTROS */
 
-#sobreNosotrosTitulo {    
+/* #sobreNosotrosTitulo {    
     font-size: 30px;
     font-style: italic;    
     margin: 20px 0px;
     text-align: center;
-}
+} */
 
 #bloqueSobreNosotros {
     display: grid;
@@ -403,21 +398,18 @@ footer {
     grid-area: bloque4;
 }
 
-#bloqueSobreNosotros__1, #bloqueSobreNosotros__2, #bloqueSobreNosotros__3, #bloqueSobreNosotros__4 {    
+/* #bloqueSobreNosotros__1, #bloqueSobreNosotros__2, #bloqueSobreNosotros__3, #bloqueSobreNosotros__4 {    
     border: 1px solid black;
     border-radius: 20px;
-    padding: 10px;
+    padding: 15px;
     margin: 10px 0px;
     background-image: radial-gradient(#f2db72 5%, #c7b96d);
-}
+} */
 
-#bloqueSobreNosotros div h3 {
-    margin-top: 0px;
-}
+/* #bloqueSobreNosotros div h3 {
+    font-style: italic;
+} */
 
-.borde {
-    border: 1px solid black;    
-}
 /* ------------------------------------------- PANTALLA TABLET ----------------------------------------- */
 
 @media screen and (min-width: 768px) {
@@ -530,8 +522,7 @@ footer {
 }
 
 #bloque__1--parrafo p {
-    font-weight: bold;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;    
     font-size: 23px;
     padding: 20px;
     border-radius: 20px;
