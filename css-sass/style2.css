@@ -1,3 +1,5 @@
+                                        /* SOBRE NOSOTROS */
+
 #sobreNosotrosTitulo {
   font-size: 30px;
   font-style: italic;
@@ -11,5 +13,5 @@
   margin: 10px 0px;
   background-image: radial-gradient(#f2db72 5%, #c7b96d); }
 
-  #bloqueSobreNosotros__1 div h3, #bloqueSobreNosotros__2 div h3, #bloqueSobreNosotros__3 div h3, #bloqueSobreNosotros__4 div h3 {
+#bloqueSobreNosotros__1 div h3, #bloqueSobreNosotros__2 div h3, #bloqueSobreNosotros__3 div h3, #bloqueSobreNosotros__4 div h3 {
     font-style: italic; }
