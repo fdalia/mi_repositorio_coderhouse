@@ -1,0 +1,102 @@
+@import "variables-actividades";
+
+#actividades__titular {        
+    font-size: 30px;
+    font-style: italic;    
+    margin: 20px 0px;
+    text-align: center;    
+}
+
+#parallaxSurf {
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: $fotoSurf;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-between;
+}
+
+#parallaxSandboard {
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: $fotoSandboard;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-between;
+}
+
+#parallaxSurf__conjuntoBloques, #parallaxSandboard__conjuntoBloques {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+}
+
+.parallaxSurf__bloque {    
+    height: 150px;
+    width: 300px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0px;
+    background-color: #ffffff4d;
+    transition: 2s;          
+}
+
+.parallaxSurf__bloque:hover {
+    background-color: #ffffffd0;
+}
+
+.parallaxSurf__bloque--titular, .parallaxSandboard__bloque--titular {
+    font-size: map-get($parallaxBloque, title-mobile);
+    top: 0px;
+    font-weight: 500;            
+}
+
+.parallaxSurf__bloque--texto, .parallaxSandboard__bloque--texto {
+    font-size: map-get($parallaxBloque, text-laptop);
+}
+
+.parallaxSandboard__bloque {
+    @extend.parallaxSurf__bloque;
+    background-color: #4a4a4a4d;    
+}
+
+.parallaxSandboard__bloque:hover {
+    background-color: #1a1a1a80
+}
+.palabraParallax {
+    margin-top: 130px;
+    font-family: 'Source Sans Pro', sans-serif;    
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;    
+    text-align: center;
+    color: white;    
+}
+
+/* ------------------------------------------- PANTALLA NOTEBOOK ----------------------------------------- */
+
+@media screen and (min-width: $pantalla-laptop) {
+
+.parallaxSurf__bloque, .parallaxSandboard__bloque {    
+    height: 150px;
+    width: 300px;
+}
+
+.parallaxSurf__bloque--titular, .parallaxSandboard__bloque--titular {
+    font-size: map-get($parallaxBloque, title-laptop);
+    margin-top: 0px;
+}
+
+.parallaxSurf__bloque--texto, .parallaxSandboard__bloque--texto {
+    font-size: map-get($parallaxBloque, text-laptop);
+    margin-top: 25px;
+}
+
+}

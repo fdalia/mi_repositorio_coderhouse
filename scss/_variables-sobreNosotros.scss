@@ -1,4 +1,6 @@
-$background-bloqueSobreNosotros: radial-gradient(#f2db72 5%, #c7b96d);
+@import "variables-general";
+
+$background-bloqueSobreNosotros: radial-gradient(#f2db72 5%, $color-principal);
 $topBottom10: 10px 0px;
 $topBottom20: 20px 0px;
 $boxBorder: 1px solid black;

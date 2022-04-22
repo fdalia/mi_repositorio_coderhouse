@@ -1,20 +1,4 @@
-@import "variables-sobreNosotros";
-                                                    // SOBRE NOSOTROS
-#sobreNosotrosTitulo {
-    font-size: 30px;
-    font-style: italic;    
-    margin: $topBottom20;
-    text-align: center;
-}
-
-#bloqueSobreNosotros__1, #bloqueSobreNosotros__2, #bloqueSobreNosotros__3, #bloqueSobreNosotros__4 {    
-    border: $boxBorder;
-    border-radius: 20px;
-    padding: 15px;
-    margin: $topBottom10;
-    background-image: $background-bloqueSobreNosotros;
-    
-    div h3 {
-        font-style: italic;
-    }
-}
+@import "sobreNosotros";
+@import "allPages";
+@import "index";
+@import "actividades";

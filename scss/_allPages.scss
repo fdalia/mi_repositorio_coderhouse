@@ -1,0 +1,111 @@
+@import "variables-general";
+
+body {    
+    background-color: $color-principal;        
+}
+
+/* ------------------------------------------- PANTALLA MOBILE -------------------------------------------- */
+
+                                            /* BARRA NAVEGADORA */                                            
+.nav-item {
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;                     
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+                                                /* FOOTER */
+
+footer {
+    background-color: #edd38ecc;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    display: grid;    
+    grid-template-columns: auto auto;
+    grid-template-areas: "copyright redesSociales";
+    border: 1px solid black;            
+}
+
+#redesSociales {
+    justify-self: right;
+    grid-area: redesSociales;
+    margin-right: 5px;                
+}
+
+#redesSociales__titular {    
+    font-size: 20px;
+    margin: 0px;
+    text-align: right;
+}
+
+#redesSociales p {
+    margin-bottom: 0px;        
+}
+
+#foto-facebook, #foto-instagram {
+    width: 30px;
+    height: 30px;            
+}
+
+#copyright {    
+    font-weight: bold;
+    grid-area: copyright;
+    align-self: end;
+    margin-left: 5px;        
+}
+
+/* ------------------------------------------- PANTALLA TABLET ----------------------------------------- */
+
+@media screen and (min-width: $pantalla-tablet) {    
+                                            
+                                            /* BARRA NAVEGADORA */
+.nav-link {    
+text-transform: uppercase;
+text-align: center;
+color: white;
+background-color: #E6C55A;
+padding: 10px;
+text-decoration: none;
+border-radius: 12px;
+margin: 2px;
+}
+
+.navbar-nav {
+margin-left: 200px;    
+}
+
+.navbar-nav .nav-item .nav-link {
+color: white;
+font-weight: lighter;
+}
+
+}
+
+/* ------------------------------------------- PANTALLA NOTEBOOK ----------------------------------------- */
+
+@media screen and (min-width: $pantalla-laptop) {                                          
+
+                                            /* BARRA NAVEGADORA */
+.nav-link {
+transition: 1s;
+}
+
+.nav-link:hover {
+font-size: 20px;
+color: white;
+background-color: #B89D48;
+}
+
+.navbar-nav {
+margin-left: 694px;
+}
+                                            /* FOOTER */
+
+#redesSociales p a {
+    margin-left: 5px;    
+}
+                                            
+}

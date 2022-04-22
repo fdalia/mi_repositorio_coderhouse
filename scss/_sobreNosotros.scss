@@ -1,0 +1,58 @@
+@import "variables-sobreNosotros";
+
+
+#sobreNosotrosTitulo {
+    font-size: 30px;
+    font-style: italic;    
+    margin: $topBottom20;
+    text-align: center;
+}
+
+#bloqueSobreNosotros {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;    
+    grid-row-gap: 5px;
+    grid-template-areas: 
+    ". bloque1 bloque1"
+    "bloque2 bloque2 ."
+    ". bloque3 bloque3"
+    "bloque4 bloque4 .";
+}
+
+#bloqueSobreNosotros__1 {
+    grid-area: bloque1;
+    text-align: right;    
+}
+
+#bloqueSobreNosotros__2 {
+    grid-area: bloque2;    
+}
+
+#bloqueSobreNosotros__3 {
+    grid-area: bloque3;
+    text-align: right;    
+}
+
+#bloqueSobreNosotros__4 {
+    grid-area: bloque4;
+}
+
+#bloqueSobreNosotros__1 div, #bloqueSobreNosotros__2 div, 
+#bloqueSobreNosotros__3 div, #bloqueSobreNosotros__4 div {
+    font-size: 28px;
+    font-weight: 600;    
+    margin-bottom: 5px;
+}
+
+#bloqueSobreNosotros__1, #bloqueSobreNosotros__2, #bloqueSobreNosotros__3, #bloqueSobreNosotros__4 {    
+    border: $boxBorder;
+    border-radius: 20px;
+    padding: 15px;
+    margin: $topBottom10;
+    background-image: $background-bloqueSobreNosotros;
+    
+    div h3 {
+        font-style: italic;
+    }
+}
