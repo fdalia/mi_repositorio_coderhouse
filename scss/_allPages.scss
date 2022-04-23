@@ -4,6 +4,13 @@ body {
     background-color: $color-principal;        
 }
 
+.tituloGeneral {
+    font-size: 30px;
+    font-style: italic;    
+    margin: 20px 0px;
+    text-align: center;
+}
+
 /* ------------------------------------------- PANTALLA MOBILE -------------------------------------------- */
 
                                             /* BARRA NAVEGADORA */                                            
@@ -26,7 +33,7 @@ footer {
     display: grid;    
     grid-template-columns: auto auto;
     grid-template-areas: "copyright redesSociales";
-    border: 1px solid black;            
+    border: $bordeNormal;            
 }
 
 #redesSociales {
@@ -46,8 +53,7 @@ footer {
 }
 
 #foto-facebook, #foto-instagram {
-    width: 30px;
-    height: 30px;            
+    @include tamaño(30px, 30px);    
 }
 
 #copyright {    

@@ -1,3 +1,17 @@
+// COLORES
 $color-principal: #c7b96d;
+$ocean-blue: #0b55a3;
+$ocean-blue__light: #1788ff;
+$light-brown: #f1f2b680;
+// TAMAÑOS DE PANTALLA
 $pantalla-tablet: 768px;
-$pantalla-laptop: 1024px; 
+$pantalla-laptop: 1024px;
+
+$topBottom10: 10px 0px;
+
+$bordeNormal: 1px solid black;
+
+@mixin tamaño($ancho, $alto) {
+    width: $ancho;
+    height: $alto;    
+}

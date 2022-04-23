@@ -1,0 +1,143 @@
+@import "variables-index";
+@import "variables-general";
+
+/* ------------------------------------------- PANTALLA MOBILE -------------------------------------------- */
+
+.titular {
+    width: 100%;    
+    border-radius: 20px;
+    background-color: #66572866;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 10px;       
+}
+
+#titular__titulo {
+    font-size: 40px;
+    margin: 0px 0px 10px 0px;
+    color: #302A13;       
+}
+
+#titular__subtitulo {
+    font-size: 20px;
+    font-style: italic;    
+    margin: 10px;
+}
+
+.bloque__1 {
+    display: grid;
+    grid-template-rows: auto auto auto;    
+    grid-template-areas: 
+    "parrafo"
+    "imagen"
+    "conocenos";
+    grid-row-gap: 20px;    
+}
+
+#bloque__1--parrafo {
+    grid-area: parrafo;
+    
+    p {
+        font-weight: bold;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 23px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: $light-brown;
+        text-align: center;
+    }
+}
+
+#bloque__1--imagen {
+    grid-area: imagen;
+    justify-self: center;
+
+    img {
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px #948c59;
+    }
+}
+
+#bloque__1--conocenos {
+    grid-area: conocenos;
+    justify-self: center;
+
+    a {
+        font-family: 'Source Sans Pro', sans-serif;    
+        font-size: 25px;
+        color: white;    
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: $ocean-blue;
+    }
+}
+
+/* ------------------------------------------- PANTALLA NOTEBOOK -------------------------------------------- */
+
+@media screen and (min-width: $pantalla-laptop) {
+
+.titular {                                                
+    width: 100%;    
+}
+
+#titular__titulo {
+    font-size: 70px;               
+}
+
+#titular__subtitulo {
+    font-size: 30px;            
+}
+
+.bloque__1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: 
+    "parrafo imagen"
+    "conocenos imagen";               
+}
+
+#bloque__1--parrafo{    
+    grid-area: parrafo;
+    justify-self: center;
+    align-self: center;
+
+    p {
+        font-weight: bold;    
+        font-size: 23px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: $light-brown;
+        width: 600px;
+        text-align: left;
+    }
+}
+
+#bloque__1--conocenos {            
+    grid-area: conocenos;
+    justify-self: center;
+    align-self: center;
+    
+    a {
+        font-family: 'Source Sans Pro', sans-serif;    
+        font-size: 25px;
+        color: white;    
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: $ocean-blue;
+    }
+}
+
+#bloque__1--conocenos a:hover {
+    background-color: $ocean-blue__light;
+}
+
+#bloque__1--imagen {            
+    align-self: center;
+    grid-area: imagen;            
+}
+
+}

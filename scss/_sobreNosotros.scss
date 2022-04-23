@@ -1,12 +1,7 @@
 @import "variables-sobreNosotros";
+@import "variables-general";
 
-
-#sobreNosotrosTitulo {
-    font-size: 30px;
-    font-style: italic;    
-    margin: $topBottom20;
-    text-align: center;
-}
+/* ------------------------------------------- PANTALLA MOBILE -------------------------------------------- */                                                   
 
 #bloqueSobreNosotros {
     display: grid;
@@ -38,19 +33,18 @@
     grid-area: bloque4;
 }
 
-#bloqueSobreNosotros__1 div, #bloqueSobreNosotros__2 div, 
-#bloqueSobreNosotros__3 div, #bloqueSobreNosotros__4 div {
-    font-size: 28px;
-    font-weight: 600;    
-    margin-bottom: 5px;
-}
-
 #bloqueSobreNosotros__1, #bloqueSobreNosotros__2, #bloqueSobreNosotros__3, #bloqueSobreNosotros__4 {    
     border: $boxBorder;
     border-radius: 20px;
     padding: 15px;
     margin: $topBottom10;
     background-image: $background-bloqueSobreNosotros;
+
+    div {
+        font-size: 28px;
+        font-weight: 600;    
+        margin-bottom: 5px;
+    }
     
     div h3 {
         font-style: italic;

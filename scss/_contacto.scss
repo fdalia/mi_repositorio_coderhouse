@@ -1,0 +1,104 @@
+@import "variables-general";
+
+/* ------------------------------------------- PANTALLA MOBILE -------------------------------------------- */
+
+#bloqueContacto {
+    display: grid;
+    grid-template-rows: auto auto;
+    margin-bottom: 15px;        
+}
+
+#formularioContacto {
+    background-color: #edd38ecc;
+    margin: $topBottom10;    
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 5px;
+}
+
+#boton-enviar {    
+    width: 100px;
+    float: right;    
+}
+
+#mapa {
+    @include tamaño(300px, 200px);    
+}
+
+#infoContacto {    
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    background-color: #e6e6e6cc;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid white;
+    justify-self: stretch;
+}
+
+#foto-telefono, #foto-email, #foto-ubicacion {    
+    // opacity: 0.5;
+    margin-right: 15px;    
+}
+
+#foto-telefono, #foto-ubicacion {
+    @include tamaño(30px, 30px);
+}
+
+#foto-email {
+    @include tamaño(30px, 25px);
+}
+
+.infoContacto__bloque {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: $topBottom10;
+}                                                
+
+/* ------------------------------------------- PANTALLA TABLET ----------------------------------------- */
+
+@media screen and (min-width: $pantalla-tablet) {    
+
+#bloqueContacto {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "formulario info";
+    grid-column-gap: 10px;
+    margin-top: 20px;    
+}                                            
+
+#formularioContacto {
+    grid-area: formulario;
+}
+
+#infoContacto {
+    grid-area: info;
+    align-self: start;    
+}
+
+}
+
+/* ------------------------------------------- PANTALLA NOTEBOOK ----------------------------------------- */
+@media screen and (min-width: $pantalla-laptop) {
+    
+#bloqueContacto {
+    display: flex;
+    flex-direction: row;    
+}
+
+#formularioContacto {    
+    margin: $topBottom10;
+    width: 900px;
+}
+
+#infoContacto {
+    margin-top: 60px;
+    margin-left: 30px;
+    width: 50%;    
+    align-self: start;
+}
+
+#mapa {
+    @include tamaño(500px, 400px);
+}
+
+}

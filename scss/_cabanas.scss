@@ -1,0 +1,133 @@
+@import "variables-general";
+
+/* ------------------------------------------- PANTALLA MOBILE -------------------------------------------- */                                                   
+
+#nuestrosBungalows {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;    
+}
+
+#petFriendly {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color: black;
+    border-radius: 15px;
+    border: 1px solid #fcd89a;
+    padding-top: 10px;
+    background-color: #d1a456;
+    animation-name: titilaRojo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+
+@keyframes titilaRojo {
+    50% {color: red;}    
+    50% {border-color: red;}
+}
+
+.titularBungalow {
+    font-weight: 600;
+    font-size: 22px;
+    text-transform: uppercase;        
+    text-align: center;
+    margin-bottom: 10px;    
+}
+
+.bloqueBungalow {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "info"
+    "carousel";
+    justify-items: center;
+    grid-row-gap: 10px;    
+}
+
+.bloqueBungalow__info {
+    border: $bordeNormal;
+    background-color: $light-brown;
+    border-radius: 20px;
+    width: 90%;    
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    grid-area: info;
+    justify-self: center;        
+}
+
+.carousel {
+    grid-area: carousel;
+}
+
+
+.bloqueBungalow__imagen1 img, .bloqueBungalow__imagen2 img, .bloqueBungalow__imagen3 img {
+    @include tamaño (250px, 150px);    
+}
+
+#quieroReservar {        
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 15px;    
+        border-radius: 10px;
+        background-color: $ocean-blue;    
+    }
+}
+
+#quieroReservar a:hover {
+    background-color: $ocean-blue__light;
+}
+
+/* ------------------------------------------- PANTALLA TABLET ----------------------------------------- */
+
+@media screen and (min-width: $pantalla-tablet) {    
+
+.bloqueBungalow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: ". info ."
+    "carousel carousel carousel";
+}
+
+.carousel-item img {
+    @include tamaño (500px, 400px);
+}
+
+}
+
+/* ------------------------------------------- PANTALLA NOTEBOOK ----------------------------------------- */
+@media screen and (min-width: $pantalla-laptop) {
+    
+.titularBungalow {
+    text-align: left;
+}
+
+#cabanas__encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bloqueBungalow {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "info carousel carousel carousel";
+    grid-column-gap: 30px;
+}
+
+.carousel-item img {
+    @include tamaño(500px, 400px);
+}
+
+.bloqueBungalow__info {
+    align-self: center;
+}
+
+}
