@@ -1,7 +1,7 @@
 {
-  "name": "desafio5-en-adelante",
+  "name": "complejo-gemini",
   "version": "1.0.0",
-  "description": "",
+  "description": "Complejo para hospedarse en la costa argentina",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

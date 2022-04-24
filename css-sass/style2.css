@@ -54,6 +54,7 @@ body {
 
 /* FOOTER */
 footer {
+  margin-top: 20px;
   background-color: #edd38ecc;
   font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
@@ -227,7 +228,8 @@ footer {
   background-image: url("https://escueladesurfwavessound.com/wp-content/uploads/2017/02/fondo-surf.jpg");
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 40px; }
 
 #parallaxSandboard {
   height: 500px;
