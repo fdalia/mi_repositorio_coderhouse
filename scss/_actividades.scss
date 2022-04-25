@@ -16,26 +16,24 @@
     margin-bottom: 40px;
 }
 
-#parallaxSandboard {
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: $fotoSandboard;
-    display: flex;
-    flex-direction: column;    
-    justify-content: space-between;
+#parallaxSandboard {    
+    @extend #parallaxSurf;    
+    background-image: $fotoSandboard;    
 }
 
-#parallaxSurf__conjuntoBloques, #parallaxSandboard__conjuntoBloques {
+#parallaxYoga {
+    @extend #parallaxSurf;
+    background-image: $fotoYoga;
+}
+
+.parallax__conjuntoBloques {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: black;
 }
 
-.parallaxSurf__bloque {    
+.parallaxSurf__bloque, .parallaxYoga__bloque {    
     @include tamaño(300px, 150px);    
     border-radius: 25px;
     text-align: center;
@@ -44,18 +42,18 @@
     transition: 2s;    
 }
 
-.parallaxSurf__bloque:hover {
+.parallaxSurf__bloque:hover, .parallaxYoga__bloque:hover {
     background-color: #ffffffd0;
 }
 
-.parallaxSurf__bloque--titular, .parallaxSandboard__bloque--titular {
+.parallax__bloque--titular{
     font-size: map-get($parallaxBloque, title-mobile);
     top: 0px;
     font-weight: 500;            
 }
 
-.parallaxSurf__bloque--texto, .parallaxSandboard__bloque--texto {
-    font-size: map-get($parallaxBloque, text-laptop);
+.parallax__bloque--texto {
+    font-size: map-get($parallaxBloque, text-mobile);
 }
 
 .parallaxSandboard__bloque {
@@ -81,16 +79,16 @@
 
 @media screen and (min-width: $pantalla-laptop) {
 
-.parallaxSurf__bloque, .parallaxSandboard__bloque {    
+.parallaxSurf__bloque, .parallaxSandboard__bloque, .parallaxYoga__bloque {    
     @include tamaño(300px, 150px);    
 }
 
-.parallaxSurf__bloque--titular, .parallaxSandboard__bloque--titular {
+.parallax__bloque--titular {
     font-size: map-get($parallaxBloque, title-laptop);
     margin-top: 0px;
 }
 
-.parallaxSurf__bloque--texto, .parallaxSandboard__bloque--texto {
+.parallax__bloque--texto {
     font-size: map-get($parallaxBloque, text-laptop);
     margin-top: 25px;
 }

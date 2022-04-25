@@ -219,7 +219,7 @@ footer {
     grid-area: imagen; } }
 
 /* ------------------------------------------- PANTALLA MOBILE -------------------------------------------- */
-#parallaxSurf {
+#parallaxSurf, #parallaxSandboard, #parallaxYoga {
   height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -232,23 +232,18 @@ footer {
   margin-bottom: 40px; }
 
 #parallaxSandboard {
-  height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("https://fotos.perfil.com/2018/02/01/sandboard-sudamerica-APERTURA.jpg");
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  background-image: url("https://fotos.perfil.com/2018/02/01/sandboard-sudamerica-APERTURA.jpg"); }
 
-#parallaxSurf__conjuntoBloques, #parallaxSandboard__conjuntoBloques {
+#parallaxYoga {
+  background-image: url("https://fondosmil.com/fondo/78822.jpg"); }
+
+.parallax__conjuntoBloques {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   color: black; }
 
-.parallaxSurf__bloque, .parallaxSandboard__bloque {
+.parallaxSurf__bloque, .parallaxSandboard__bloque, .parallaxYoga__bloque {
   width: 300px;
   height: 150px;
   border-radius: 25px;
@@ -257,16 +252,16 @@ footer {
   background-color: #ffffff4d;
   transition: 2s; }
 
-.parallaxSurf__bloque:hover, .parallaxSandboard__bloque:hover {
+.parallaxSurf__bloque:hover, .parallaxSandboard__bloque:hover, .parallaxYoga__bloque:hover {
   background-color: #ffffffd0; }
 
-.parallaxSurf__bloque--titular, .parallaxSandboard__bloque--titular {
+.parallax__bloque--titular {
   font-size: 14px;
   top: 0px;
   font-weight: 500; }
 
-.parallaxSurf__bloque--texto, .parallaxSandboard__bloque--texto {
-  font-size: 16px; }
+.parallax__bloque--texto {
+  font-size: 12px; }
 
 .parallaxSandboard__bloque {
   background-color: #4a4a4a4d; }
@@ -285,13 +280,13 @@ footer {
 
 /* ------------------------------------------- PANTALLA NOTEBOOK ----------------------------------------- */
 @media screen and (min-width: 1024px) {
-  .parallaxSurf__bloque, .parallaxSandboard__bloque, .parallaxSandboard__bloque {
+  .parallaxSurf__bloque, .parallaxSandboard__bloque, .parallaxSandboard__bloque, .parallaxYoga__bloque {
     width: 300px;
     height: 150px; }
-  .parallaxSurf__bloque--titular, .parallaxSandboard__bloque--titular {
+  .parallax__bloque--titular {
     font-size: 19px;
     margin-top: 0px; }
-  .parallaxSurf__bloque--texto, .parallaxSandboard__bloque--texto {
+  .parallax__bloque--texto {
     font-size: 16px;
     margin-top: 25px; } }
 
@@ -305,7 +300,8 @@ footer {
   background-color: #edd38ecc;
   margin: 10px 0px;
   font-family: 'Source Sans Pro', sans-serif;
-  padding-left: 5px; }
+  padding-left: 5px;
+  border-radius: 20px; }
 
 #boton-enviar {
   width: 100px;
