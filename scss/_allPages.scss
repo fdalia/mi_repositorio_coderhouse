@@ -5,7 +5,8 @@ body {
 }
 
 .tituloGeneral {
-    font-size: 30px;
+    font-family: $fuenteTitular;
+    font-size: 40px;
     font-style: italic;    
     margin: 20px 0px;
     text-align: center;
@@ -16,7 +17,7 @@ body {
                                             /* BARRA NAVEGADORA */                                            
 .nav-item {
     text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;                     
+    font-family: $fuentePrincipal;                     
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -29,7 +30,7 @@ body {
 footer {
     margin-top: 20px;
     background-color: #edd38ecc;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $fuentePrincipal;
     width: 100%;
     display: grid;    
     grid-template-columns: auto auto;
@@ -70,23 +71,23 @@ footer {
                                             
                                             /* BARRA NAVEGADORA */
 .nav-link {    
-text-transform: uppercase;
-text-align: center;
-color: white;
-background-color: #E6C55A;
-padding: 10px;
-text-decoration: none;
-border-radius: 12px;
-margin: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    background-color: #E6C55A;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 12px;
+    margin: 2px;
 }
 
 .navbar-nav {
-margin-left: 200px;    
+    margin-left: 200px;    
 }
 
 .navbar-nav .nav-item .nav-link {
-color: white;
-font-weight: lighter;
+    color: white;
+    font-weight: lighter;
 }
 
 }
@@ -97,17 +98,17 @@ font-weight: lighter;
 
                                             /* BARRA NAVEGADORA */
 .nav-link {
-transition: 1s;
+    transition: 1s;
 }
 
 .nav-link:hover {
-font-size: 20px;
-color: white;
-background-color: #B89D48;
+    font-size: 20px;
+    color: white;
+    background-color: #B89D48;
 }
 
 .navbar-nav {
-margin-left: 694px;
+    margin-left: 694px;
 }
                                             /* FOOTER */
 

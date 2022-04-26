@@ -10,11 +10,13 @@
     text-align: center;
     display: flex;
     flex-flow: column nowrap;
-    margin-top: 10px;       
+    margin-top: 10px;
+    font-family: $fuenteTitular;       
 }
 
 #titular__titulo {
     font-size: 40px;
+    font-weight: bold;
     margin: 0px 0px 10px 0px;
     color: #302A13;       
 }
@@ -22,7 +24,7 @@
 #titular__subtitulo {
     font-size: 20px;
     font-style: italic;    
-    margin: 10px;
+    margin: 10px;    
 }
 
 .bloque__1 {
@@ -38,10 +40,10 @@
 #bloque__1--parrafo {
     grid-area: parrafo;
     
-    p {
-        font-weight: bold;
-        font-family: 'Roboto Condensed', sans-serif;
-        font-size: 23px;
+    p {        
+        font-family: $fuentePrincipal;
+        font-style: italic;
+        font-size: 21px;
         padding: 20px;
         border-radius: 20px;
         background-color: $light-brown;
@@ -64,7 +66,7 @@
     justify-self: center;
 
     a {
-        font-family: 'Source Sans Pro', sans-serif;    
+        font-family: $fuentePrincipal;    
         font-size: 25px;
         color: white;    
         text-decoration: none;
@@ -87,7 +89,7 @@
 }
 
 #titular__subtitulo {
-    font-size: 30px;            
+    font-size: 30px;                
 }
 
 .bloque__1 {
@@ -104,12 +106,7 @@
     justify-self: center;
     align-self: center;
 
-    p {
-        font-weight: bold;    
-        font-size: 23px;
-        padding: 20px;
-        border-radius: 20px;
-        background-color: $light-brown;
+    p {                                            
         width: 600px;
         text-align: left;
     }
@@ -118,17 +115,7 @@
 #bloque__1--conocenos {            
     grid-area: conocenos;
     justify-self: center;
-    align-self: center;
-    
-    a {
-        font-family: 'Source Sans Pro', sans-serif;    
-        font-size: 25px;
-        color: white;    
-        text-decoration: none;
-        padding: 10px;
-        border-radius: 10px;
-        background-color: $ocean-blue;
-    }
+    align-self: center;        
 }
 
 #bloque__1--conocenos a:hover {

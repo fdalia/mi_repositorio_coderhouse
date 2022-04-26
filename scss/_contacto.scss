@@ -11,7 +11,7 @@
 #formularioContacto {
     background-color: #edd38ecc;
     margin: $topBottom10;    
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $fuentePrincipal;
     padding-left: 5px;
     border-radius: 20px;
 }
@@ -26,7 +26,7 @@
 }
 
 #infoContacto {    
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $fuentePrincipal;
     font-weight: bold;
     background-color: #e6e6e6cc;
     padding: 10px;
@@ -35,8 +35,7 @@
     justify-self: stretch;
 }
 
-#foto-telefono, #foto-email, #foto-ubicacion {    
-    // opacity: 0.5;
+#foto-telefono, #foto-email, #foto-ubicacion {        
     margin-right: 15px;    
 }
 
@@ -86,8 +85,7 @@
     flex-direction: row;    
 }
 
-#formularioContacto {    
-    margin: $topBottom10;
+#formularioContacto {        
     width: 900px;
 }
 

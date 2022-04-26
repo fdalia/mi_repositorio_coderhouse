@@ -34,7 +34,8 @@
 }
 
 .parallaxSurf__bloque, .parallaxYoga__bloque {    
-    @include tamaño(300px, 150px);    
+    @include tamaño(300px, 150px);
+    font-family: $fuentePrincipal;    
     border-radius: 25px;
     text-align: center;
     padding: 0px;
@@ -47,13 +48,12 @@
 }
 
 .parallax__bloque--titular{
-    font-size: map-get($parallaxBloque, title-mobile);
-    top: 0px;
-    font-weight: 500;            
+    font-size: map-get($parallaxBloque, title-mobile);    
+    font-weight: bold;            
 }
 
 .parallax__bloque--texto {
-    font-size: map-get($parallaxBloque, text-mobile);
+    font-size: map-get($parallaxBloque, text-mobile);    
 }
 
 .parallaxSandboard__bloque {
@@ -67,7 +67,7 @@
 
 .palabraParallax {
     margin-top: 130px;
-    font-family: 'Source Sans Pro', sans-serif;    
+    font-family: $fuenteTitular;    
     font-size: 50px;
     font-style: italic;
     font-weight: bold;    

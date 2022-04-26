@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Source+Sans+Pro&display=swap');
+
 // COLORES
 $color-principal: #c7b96d;
 $ocean-blue: #0b55a3;
@@ -6,6 +9,10 @@ $light-brown: #f1f2b680;
 // TAMAÑOS DE PANTALLA
 $pantalla-tablet: 768px;
 $pantalla-laptop: 1024px;
+// FUENTES
+$fuentePrincipal: 'Source Sans Pro', sans-serif;
+$fuenteTitular: 'Nunito', sans-serif;
+
 
 $topBottom10: 10px 0px;
 
