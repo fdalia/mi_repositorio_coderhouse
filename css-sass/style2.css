@@ -41,12 +41,19 @@
   padding: 15px;
   margin: 10px 0px;
   background-image: radial-gradient(#f2db72 5%, #c7b96d); }
-  #bloqueSobreNosotros__1 div, #bloqueSobreNosotros__2 div, #bloqueSobreNosotros__3 div, #bloqueSobreNosotros__4 div {
+  #bloqueSobreNosotros__1 .bloqueSobreNosotros__titular, #bloqueSobreNosotros__2 .bloqueSobreNosotros__titular, #bloqueSobreNosotros__3 .bloqueSobreNosotros__titular, #bloqueSobreNosotros__4 .bloqueSobreNosotros__titular {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 5px; }
-  #bloqueSobreNosotros__1 div h3, #bloqueSobreNosotros__2 div h3, #bloqueSobreNosotros__3 div h3, #bloqueSobreNosotros__4 div h3 {
-    font-style: italic; }
+  #bloqueSobreNosotros__1 span, #bloqueSobreNosotros__2 span, #bloqueSobreNosotros__3 span, #bloqueSobreNosotros__4 span {
+    font-weight: bold;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 7px;
+    background-color: #e6de09; }
+    #bloqueSobreNosotros__1 span a, #bloqueSobreNosotros__2 span a, #bloqueSobreNosotros__3 span a, #bloqueSobreNosotros__4 span a {
+      text-decoration: none;
+      color: black; }
 
 body {
   background-color: #c7b96d; }
@@ -73,33 +80,24 @@ footer {
   margin-top: 20px;
   background-color: #edd38ecc;
   font-family: "Source Sans Pro", sans-serif;
+  font-style: italic;
   width: 100%;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-areas: "copyright redesSociales";
-  border: 1px solid black; }
-
-#redesSociales {
-  justify-self: right;
-  grid-area: redesSociales;
-  margin-right: 5px; }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  padding: 10px 15px 10px 20px; }
 
 #redesSociales__titular {
-  font-size: 20px;
-  margin: 0px;
-  text-align: right; }
-
-#redesSociales p {
-  margin-bottom: 0px; }
+  font-size: 18px;
+  margin: 0px; }
 
 #foto-facebook, #foto-instagram {
-  width: 30px;
-  height: 30px; }
+  width: 25px;
+  height: 25px; }
 
 #copyright {
   font-weight: bold;
-  grid-area: copyright;
-  align-self: end;
   margin-left: 5px; }
 
 /* ------------------------------------------- PANTALLA TABLET ----------------------------------------- */

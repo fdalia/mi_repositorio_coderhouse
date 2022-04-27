@@ -41,13 +41,22 @@
     margin: $topBottom10;
     background-image: $background-bloqueSobreNosotros;
 
-    div {
+    .bloqueSobreNosotros__titular {
         font-size: 28px;
         font-weight: 600;    
-        margin-bottom: 5px;
-    }
+        margin-bottom: 5px;        
+    }       
     
-    div h3 {
-        font-style: italic;
+    span {
+        font-weight: bold;
+        font-size: 12px;
+        padding: 4px;
+        border-radius: 7px;
+        background-color: #e6de09;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
     }
 }

@@ -59,9 +59,10 @@
 @media screen and (min-width: $pantalla-tablet) {    
 
 #bloqueContacto {
-    display: grid;
+    display: grid;    
     grid-template-columns: 60% 40%;
-    grid-template-areas: "formulario info";
+    grid-template-areas: 
+    "formulario info";
     grid-column-gap: 10px;
     margin-top: 20px;    
 }                                            

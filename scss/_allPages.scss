@@ -31,39 +31,29 @@ footer {
     margin-top: 20px;
     background-color: #edd38ecc;
     font-family: $fuentePrincipal;
+    font-style: italic;
     width: 100%;
-    display: grid;    
-    grid-template-columns: auto auto;
-    grid-template-areas: "copyright redesSociales";
-    border: $bordeNormal;            
-}
-
-#redesSociales {
-    justify-self: right;
-    grid-area: redesSociales;
-    margin-right: 5px;                
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;    
+    border-radius: 15px;
+    padding: 10px 15px 10px 20px;            
 }
 
 #redesSociales__titular {    
-    font-size: 20px;
-    margin: 0px;
-    text-align: right;
-}
-
-#redesSociales p {
-    margin-bottom: 0px;        
+    font-size: 18px;
+    margin: 0px;    
 }
 
 #foto-facebook, #foto-instagram {
-    @include tamaño(30px, 30px);    
+    @include tamaño(25px, 25px);    
 }
 
 #copyright {    
-    font-weight: bold;
-    grid-area: copyright;
-    align-self: end;
-    margin-left: 5px;        
+    font-weight: bold;        
+    margin-left: 5px;            
 }
+
 
 /* ------------------------------------------- PANTALLA TABLET ----------------------------------------- */
 
