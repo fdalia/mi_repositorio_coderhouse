@@ -39,10 +39,6 @@
     margin-right: 15px;    
 }
 
-#foto-telefono, #foto-ubicacion {
-    @include tamaño(30px, 30px);
-}
-
 #foto-email {
     @include tamaño(30px, 25px);
 }
