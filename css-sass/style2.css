@@ -242,7 +242,7 @@ footer {
   color: black; }
 
 .parallaxSurf__bloque, .parallaxSandboard__bloque, .parallaxYoga__bloque {
-  width: 300px;
+  width: 100px;
   height: 150px;
   font-family: "Source Sans Pro", sans-serif;
   border-radius: 25px;

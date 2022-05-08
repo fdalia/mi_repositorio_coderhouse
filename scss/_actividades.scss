@@ -34,7 +34,7 @@
 }
 
 .parallaxSurf__bloque, .parallaxYoga__bloque {    
-    @include tamaño(300px, 150px);
+    @include tamaño(100px, 150px);
     font-family: $fuentePrincipal;    
     border-radius: 25px;
     text-align: center;
