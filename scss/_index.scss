@@ -10,7 +10,7 @@
     text-align: center;
     display: flex;
     flex-flow: column nowrap;
-    margin-top: 10px;
+    margin: $topBottom10;
     font-family: $fuenteTitular;       
 }
 
@@ -52,11 +52,12 @@
 }
 
 #bloque__1--imagen {
-    grid-area: imagen;    
+    grid-area: imagen;
+    text-align: center;    
 
     img {
         border-radius: 20px;
-        box-shadow: 10px 10px 20px #948c59;
+        box-shadow: 10px 10px 20px #948c59;        
     }
 }
 
@@ -121,8 +122,7 @@
     background-color: $ocean-blue__light;
 }
 
-#bloque__1--imagen {            
-    align-self: center;
+#bloque__1--imagen {                
     grid-area: imagen;            
 }
 

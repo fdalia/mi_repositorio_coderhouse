@@ -73,7 +73,8 @@ body {
 
 .navbar-nav .nav-item .nav-link {
   color: black;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: right; }
 
 /* FOOTER */
 footer {
@@ -107,7 +108,8 @@ footer {
     padding: 10px;
     text-decoration: none;
     border-radius: 12px;
-    margin: 2px; }
+    margin: 2px;
+    font-size: 13px; }
   .navbar-nav {
     margin-left: 200px; }
   .navbar-nav .nav-item .nav-link {
@@ -118,7 +120,8 @@ footer {
 @media screen and (min-width: 1024px) {
   /* BARRA NAVEGADORA */
   .nav-link {
-    transition: 1s; }
+    transition: 1s;
+    font-size: 16px; }
   .nav-link:hover {
     font-size: 20px;
     color: white;
@@ -137,7 +140,7 @@ footer {
   text-align: center;
   display: flex;
   flex-flow: column nowrap;
-  margin-top: 10px;
+  margin: 10px 0px;
   font-family: "Nunito", sans-serif; }
 
 #titular__titulo {
@@ -169,7 +172,8 @@ footer {
     text-align: center; }
 
 #bloque__1--imagen {
-  grid-area: imagen; }
+  grid-area: imagen;
+  text-align: center; }
   #bloque__1--imagen img {
     border-radius: 20px;
     box-shadow: 10px 10px 20px #948c59; }
@@ -213,7 +217,6 @@ footer {
   #bloque__1--conocenos a:hover {
     background-color: #1788ff; }
   #bloque__1--imagen {
-    align-self: center;
     grid-area: imagen; } }
 
 /* ------------------------------------------- PANTALLA MOBILE -------------------------------------------- */
@@ -275,6 +278,18 @@ footer {
   font-weight: bold;
   text-align: center;
   color: white; }
+
+/* ------------------------------------------- PANTALLA TABLET ----------------------------------------- */
+@media screen and (min-width: 768px) {
+  .parallaxSurf__bloque, .parallaxSandboard__bloque, .parallaxSandboard__bloque, .parallaxYoga__bloque {
+    width: 250px;
+    height: 150px; }
+  .parallax__bloque--titular {
+    font-size: 16px;
+    margin-top: 0px; }
+  .parallax__bloque--texto {
+    font-size: 14px;
+    margin-top: 25px; } }
 
 /* ------------------------------------------- PANTALLA NOTEBOOK ----------------------------------------- */
 @media screen and (min-width: 1024px) {

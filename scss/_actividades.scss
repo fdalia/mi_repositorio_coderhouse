@@ -75,6 +75,26 @@
     color: white;    
 }
 
+/* ------------------------------------------- PANTALLA TABLET ----------------------------------------- */
+
+@media screen and (min-width: $pantalla-tablet) {
+
+.parallaxSurf__bloque, .parallaxSandboard__bloque, .parallaxYoga__bloque {    
+    @include tamaño(250px, 150px);    
+}
+
+.parallax__bloque--titular {
+    font-size: map-get($parallaxBloque, title-tablet);
+    margin-top: 0px;
+}
+
+.parallax__bloque--texto {
+    font-size: map-get($parallaxBloque, text-tablet);
+    margin-top: 25px;
+}
+
+}
+
 /* ------------------------------------------- PANTALLA NOTEBOOK ----------------------------------------- */
 
 @media screen and (min-width: $pantalla-laptop) {

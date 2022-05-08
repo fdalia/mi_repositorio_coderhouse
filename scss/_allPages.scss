@@ -23,6 +23,7 @@ body {
 .navbar-nav .nav-item .nav-link {
     color: black;
     font-weight: bold;
+    text-align: right;    
 }
 
                                                 /* FOOTER */
@@ -65,6 +66,7 @@ footer {
     text-decoration: none;
     border-radius: 12px;
     margin: 2px;
+    font-size: 13px;
 }
 
 .navbar-nav {
@@ -85,6 +87,7 @@ footer {
                                             /* BARRA NAVEGADORA */
 .nav-link {
     transition: 1s;
+    font-size: 16px;
 }
 
 .nav-link:hover {
