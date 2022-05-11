@@ -20,16 +20,20 @@ body {
     font-family: $fuentePrincipal;                     
 }
 
-.navbar-nav .nav-item .nav-link {
-    color: black;
-    font-weight: bold;
-    text-align: right;    
+.navbar-nav {
+    .nav-item {
+        .nav-link {
+            color: black;
+            font-weight: bold;
+            text-align: right;
+        }
+    }
 }
 
                                                 /* FOOTER */
 
 footer {
-    margin-top: 20px;
+    margin: $topBottom10;
     background-color: #edd38ecc;
     font-family: $fuentePrincipal;
     font-style: italic;
@@ -38,12 +42,13 @@ footer {
     justify-content: space-between;
     align-items: center;    
     border-radius: 15px;
-    padding: 10px 15px 10px 20px;            
+    padding: 5px 15px 5px 15px;
+    font-size: 13px;            
 }
 
 #redesSociales__titular {    
-    font-size: 18px;
-    margin: 0px;    
+    font-size: 15px;
+    margin: 0px 0px 0px 15px;    
 }
 
 #copyright {    
@@ -73,9 +78,23 @@ footer {
     margin-left: 200px;    
 }
 
-.navbar-nav .nav-item .nav-link {
-    color: white;
-    font-weight: lighter;
+.navbar-nav {
+    .nav-item {
+        .nav-link {
+            color: white;
+            font-weight: lighter;
+        }
+    }
+}
+
+footer {
+    padding: 10px 15px 10px 20px;
+    font-size: 16px;
+}
+
+#redesSociales__titular {    
+    font-size: 18px;
+    margin: 0px;
 }
 
 }
@@ -105,4 +124,4 @@ footer {
     margin-left: 5px;    
 }
                                             
-}
+} 

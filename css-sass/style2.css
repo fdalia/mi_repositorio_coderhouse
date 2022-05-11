@@ -78,7 +78,7 @@ body {
 
 /* FOOTER */
 footer {
-  margin-top: 20px;
+  margin: 10px 0px;
   background-color: #edd38ecc;
   font-family: "Source Sans Pro", sans-serif;
   font-style: italic;
@@ -87,11 +87,12 @@ footer {
   justify-content: space-between;
   align-items: center;
   border-radius: 15px;
-  padding: 10px 15px 10px 20px; }
+  padding: 5px 15px 5px 15px;
+  font-size: 13px; }
 
 #redesSociales__titular {
-  font-size: 18px;
-  margin: 0px; }
+  font-size: 15px;
+  margin: 0px 0px 0px 15px; }
 
 #copyright {
   font-weight: bold;
@@ -114,7 +115,13 @@ footer {
     margin-left: 200px; }
   .navbar-nav .nav-item .nav-link {
     color: white;
-    font-weight: lighter; } }
+    font-weight: lighter; }
+  footer {
+    padding: 10px 15px 10px 20px;
+    font-size: 16px; }
+  #redesSociales__titular {
+    font-size: 18px;
+    margin: 0px; } }
 
 /* ------------------------------------------- PANTALLA NOTEBOOK ----------------------------------------- */
 @media screen and (min-width: 1024px) {
@@ -268,7 +275,8 @@ footer {
   background-color: #4a4a4a4d; }
 
 .parallaxSandboard__bloque:hover {
-  background-color: #1a1a1a80; }
+  background-color: #1a1a1a80;
+  color: rgba(240, 248, 255, 0.719); }
 
 .palabraParallax {
   margin-top: 130px;
